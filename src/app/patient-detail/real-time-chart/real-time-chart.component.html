@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div class="myChartWrapper.px" [style.width.px]="widthChartWrapper">
+      <div class="myChart" [style.width]="widthChart" #scrollContainer>
+        <canvas baseChart height="50" [style.width]="widthChart"
+          [type]="'line'"
+          [data]="lineChartData"
+          [options]="lineChartOptions"
+          >
+        </canvas>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 40em;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    align-self: flex-end;
+    margin-bottom: 8px;
+}
+
+.patient {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f7f7f7;
+    margin-bottom: 8px;
+}
+
+.patient:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.box {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.title {
+    color: white;
+}

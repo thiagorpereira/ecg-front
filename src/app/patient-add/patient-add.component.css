@@ -1,0 +1,38 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.back {
+    cursor: pointer;
+    font-size: 12px;
+    color: #333;
+    align-self: flex-start;
+}
+
+.wrapperButton {
+    margin-top: 16px;
+}
+
+.example-tel-input-container {
+    display: flex;
+  }
+  
+  .example-tel-input-element {
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none;
+    font: inherit;
+    text-align: center;
+  }
+  
+  .example-tel-input-spacer {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  
+  :host.example-floating .example-tel-input-spacer {
+    opacity: 1;
+  }

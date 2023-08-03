@@ -1,0 +1,35 @@
+
+<mat-card class="container">
+    <button class="back" mat-icon-button matTooltip="Basic" aria-label="Example icon button with a home icon" (click)="goBack()">
+        <i class="material-icons">arrow_back</i>
+    </button>
+    <div class="headerContainer">
+        <mat-card-header>
+            <mat-card-title>ECG</mat-card-title>
+            <mat-card-subtitle>{{patient.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <div>
+            <mat-icon aria-hidden="false" aria-label="icon" fontIcon="monitor_heart"></mat-icon>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="row">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="cake"></mat-icon>
+            <mat-card-subtitle class="customLabel">{{formatDate()}}</mat-card-subtitle>
+        </div>
+        <div class="row">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="phone_iphone"></mat-icon>
+            <mat-card-subtitle class="customLabel">{{patient.phone}}</mat-card-subtitle>
+        </div>
+        <div class="row">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="wallet"></mat-icon>
+            <mat-card-subtitle class="customLabel">{{patient.cpf}}</mat-card-subtitle>
+        </div>
+
+    </div>
+    <app-real-time-chart></app-real-time-chart>
+
+    <mat-card-subtitle class="customLabel">Hoje: {{todayFormatted()}}</mat-card-subtitle>
+
+</mat-card>

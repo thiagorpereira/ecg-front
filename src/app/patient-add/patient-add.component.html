@@ -1,0 +1,54 @@
+<mat-card class="container">
+<div class="form-container" [formGroup]="formClient">
+    <button class="back" mat-icon-button matTooltip="Basic" aria-label="Example icon button with a home icon" (click)="goBack()">
+        <i class="material-icons">arrow_back</i>
+    </button>
+    <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <input matInput #input placeholder="Nome" formControlName="name">
+        <mat-error *ngIf="formClient.controls['name'].hasError('required') && formClient.controls['name'].touched">
+            Nome obrigatório
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Data de nascimento</mat-label>
+        <input matInput #input placeholder="Data de nascimento" formControlName="birthDate" mask="00/00/0000" >
+        <mat-error *ngIf="formClient.controls['birthDate'].hasError('required') && formClient.controls['birthDate'].touched">
+            Data obrigatória
+        </mat-error>
+        <mat-error *ngIf="formClient.controls['birthDate'].hasError('pattern') && formClient.controls['birthDate'].touched">
+            Data inválida
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>CPF</mat-label>
+        <input matInput #input placeholder="000.000.000-00" formControlName="cpf" mask="000-000-000-00">
+        <mat-error *ngIf="formClient.controls['cpf'].hasError('required') && formClient.controls['cpf'].touched">
+            CPF obrigatório
+        </mat-error>
+        <mat-error *ngIf="formClient.controls['cpf'].hasError('pattern') && formClient.controls['cpf'].touched">
+            CPF inválido
+        </mat-error>
+        
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Telefone</mat-label>
+        <input matInput #input placeholder="(00) 00000-0000" formControlName="phone" mask="(00) 00000-0000">
+        <mat-error *ngIf="formClient.controls['phone'].hasError('required') && formClient.controls['phone'].touched">
+            Telefone obrigatório
+        </mat-error>
+        <mat-error *ngIf="formClient.controls['phone'].hasError('pattern') && formClient.controls['phone'].touched">
+            Telefone inválido
+        </mat-error>
+      </mat-form-field>
+    
+</div>
+</mat-card>
+
+<div mat-dialog-actions class="wrapperButton">
+    <button mat-flat-button class="button" type="submit" class="button-save" (click)="savePatient()" cdkFocusInitial>Salvar</button>
+</div>
+

@@ -1,0 +1,63 @@
+.container {
+    max-width: 400px;
+    padding: 12px 16px 16px 16px;
+
+}
+
+/* .icon {
+    width: 14px;
+    height: 14px;
+} */
+
+.headerContainer {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+    padding-right: 16px;
+    margin-bottom: 16px;
+}
+
+.body {
+    margin-bottom: 16px;
+}
+
+.back {
+    cursor: pointer;
+    font-size: 12px;
+    color: #333;
+    align-self: flex-start;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.customLabel {
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.title {
+    /* font-family: 'Roboto'; */
+    font-weight: 700;
+}
+
+.mat-label {
+    background-color: aqua;
+    color: #333;
+    padding: 8px;
+    font-weight: bold;
+  }
+
+/* .mat-card-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+  } */

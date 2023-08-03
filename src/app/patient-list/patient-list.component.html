@@ -1,0 +1,20 @@
+
+<div class="container">
+	<button mat-flat-button class="button" (click)="goToPatientAdd()">Adicionar<mat-icon>add</mat-icon></button>
+<mat-card>
+	<mat-card-header>
+    <mat-card-title>Pacientes</mat-card-title>
+	
+    </mat-card-header>
+
+    <div class="box" >
+        <div *ngFor="let item of patients">
+					<div class="patient">
+						<mat-card-subtitle (click)="goToDetail(item)">{{item.name}}</mat-card-subtitle>
+						<mat-icon aria-hidden="false" aria-label="icon" fontIcon="bolt"></mat-icon>
+					</div>
+            
+        </div>
+    </div>
+</mat-card>
+</div>
