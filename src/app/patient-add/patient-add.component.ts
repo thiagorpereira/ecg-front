@@ -9,8 +9,6 @@ import {
 } from '@angular/forms';
 import { PatientService } from '../shared/service/patient.service';
 
-// import { NgxMaskModule } from '@ngx-mask/core';
-
 @Component({
   selector: 'app-patient-add',
   templateUrl: './patient-add.component.html',

@@ -25,7 +25,6 @@
     "@angular/router": "^16.1.0",
     "@ngx-formly/core": "^6.1.8",
     "@ngx-formly/material": "^6.1.8",
-    "@ngx-mask/core": "^2.0.0",
     "chart.js": "^4.3.3",
     "ng2-charts": "^5.0.1",
     "ngx-mask": "^16.2.5",

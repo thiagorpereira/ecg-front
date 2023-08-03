@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { PatientService } from '../shared/service/patient.service';
 import { IPatient, IPatientOne } from '../shared/models/IPatient';
 import { DatePipe, Location } from '@angular/common';
-import { formatPhone } from '../shared/utils/utils';
 
 @Component({
   selector: 'app-patient-detail',
